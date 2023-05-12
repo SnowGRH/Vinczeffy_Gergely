@@ -1,19 +1,29 @@
+import Lampa from "./lampa.js"
+
 class JatekTer{
     #db;
-    #allapotLista;
+    #allapotLista=[];
     #meret;
     #lepes;
     
     constructor(){
+        const ART = $("article");
+        let allapotLista = this.#allapotLista;
+        for (let index = 0; index < 7; index++) {
+            const lampa = new Lampa(index,allapotLista[index],ART);
+            console.log(index);
+        }
+    }
+    #setAllapotLista(){
 
     }
-    setAllapotLista(){
+    #szomszedokKeresese(id){
+        
+    }
+    #init(){
 
     }
-    init(){
-
-    }
-    ellenorzes(){
+    #ellenorzes(){
 
     }
 
