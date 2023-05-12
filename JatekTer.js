@@ -1,4 +1,4 @@
-import Lampa from "./lampa.js"
+import Lampa from "./Lampa.js"
 
 class JatekTer{
     #db;
